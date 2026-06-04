@@ -49,7 +49,7 @@ install_packages() {
 
     # Main package set
     yay -S --noconfirm --needed \
-        thunar curl git wget htop btop bat thunar-volman gvfs gvfs-afc gvfs-smb samba \
+        thunar curl git wget htop btop bat redshift thunar-volman gvfs gvfs-afc gvfs-smb samba \
         xfce4-settings tumbler yt-dlp alacritty mpv gedit gnome-keyring seahorse pavucontrol \
         brightnessctl acpi sysstat iw network-manager-applet grim slurp hyprpicker \
         xdg-desktop-portal-wlr hyprwayland-scanner yazi power-profiles-daemon \
@@ -57,15 +57,13 @@ install_packages() {
         eza cava xdg-desktop-portal-hyprland hyprutils hyprcursor hyprpaper hypridle hyprlock \
         wofi dunst qt5-wayland qt6ct wlogout timeshift yad jq go polkit-gnome waypaper \
         lxappearance-gtk3 firefox openvpn qemu-guest-agent spice-vdagent virt-viewer \
-        libreoffice-fresh nwg-look linux linux-firmware linux-headers intel-ucode bluez \
-        bluez-utils zsh woff2 wlr-randr waybar ttf-ms-fonts ttf-nerd-fonts-symbols \
+        libreoffice-fresh nwg-look trezor-suite-bin linux linux-firmware linux-headers intel-ucode bluez \
+        bluez-utils zsh woff2 wlr-randr waybar ttf-ms-fonts \
         remmina freerdp fish foot virt-manager qemu-full libvirt edk2-ovmf dnsmasq iptables-nft \
-        dosfstools gnome-disk-utility wl-clipboard
+        bridge-utils dosfstools gnome-disk-utility wl-clipboard
 
-    # NOTE: icaclient (Citrix) requires manual AUR install — EULA must be accepted.
-    # Run manually: yay -S icaclient
-    # NOTE: trezor-suite-bin — uncomment if you use a Trezor hardware wallet.
-    # yay -S --noconfirm trezor-suite-bin
+    # NOTE: icaclient (Citrix) requires manual AUR install — EULA must be accepted interactively.
+    # Run manually after install: yay -S icaclient
 
     success "Packages installed"
 }
