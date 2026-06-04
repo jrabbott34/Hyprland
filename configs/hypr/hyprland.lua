@@ -118,6 +118,13 @@ hl.config({
     },
 })
 
+-- Swipe left/right with 3 fingers to switch workspaces
+hl.gesture({
+    fingers   = 3,
+    direction = "horizontal",
+    action    = "workspace",
+})
+
 -- Input
 hl.config({
     input = {
@@ -151,7 +158,8 @@ local browser     = "firefox"
 hl.bind(mainMod .. " + Return",    hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + Q",         hl.dsp.window.close())
 hl.bind(mainMod .. " + E",         hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + R",         hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + Space",     hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + H",        hl.dsp.exec_cmd("~/.config/hypr/scripts/keybinds.sh"))
 hl.bind(mainMod .. " + B",         hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + F",         hl.dsp.exec_cmd("hyprctl dispatch fullscreen"))
 hl.bind(mainMod .. " + V",         hl.dsp.window.float({ action = "toggle" }))

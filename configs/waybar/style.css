@@ -167,6 +167,7 @@ window#waybar.hidden {
 /* ── Weather ──────────────────────────────────────────────────────────────── */
 #custom-weather {
     color: @yellow;
+    font-family: "Noto Color Emoji", "FiraCode Nerd Font", monospace;
 }
 
 /* ── Caffeine ─────────────────────────────────────────────────────────────── */
