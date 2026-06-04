@@ -5,8 +5,8 @@
 LOCATION="${WEATHER_LOCATION:-}"
 
 # Condition + temp on one line, full report as tooltip
-WEATHER=$(curl -s --max-time 10 "wttr.in/${LOCATION}?format=%c+%t" 2>/dev/null | tr -d '\n')
-TOOLTIP=$(curl -s --max-time 10 "wttr.in/${LOCATION}?format=3" 2>/dev/null)
+WEATHER=$(curl -s --max-time 10 -A "curl" "wttr.in/${LOCATION}?format=%c+%t" 2>/dev/null | tr -d '\n')
+TOOLTIP=$(curl -s --max-time 10 -A "curl" "wttr.in/${LOCATION}?format=3" 2>/dev/null)
 
 if [[ -z "$WEATHER" || "$WEATHER" == *"Unknown"* ]]; then
     echo '{"text": "󰖑 N/A", "tooltip": "Weather unavailable", "class": ""}'

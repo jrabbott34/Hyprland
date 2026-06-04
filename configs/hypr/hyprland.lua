@@ -173,6 +173,9 @@ hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("hyprctl dispatch exit"))
 -- Caffeine (inhibit idle/sleep)
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("~/.config/hypr/scripts/caffeine-toggle.sh"))
 
+-- Toggle waybar
+hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
+
 -- Screenshots
 hl.bind("Print",
     hl.dsp.exec_cmd([[grim -g "$(slurp)" - | wl-copy && notify-send "Screenshot" "Copied to clipboard"]]))
