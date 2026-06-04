@@ -93,7 +93,7 @@ deploy_configs() {
         "$HOME/Pictures/wallpapers"
 
     # Hyprland
-    cp "$CONFIGS_DIR/hypr/hyprland.conf"  "$HOME/.config/hypr/hyprland.conf"
+    cp "$CONFIGS_DIR/hypr/hyprland.lua"   "$HOME/.config/hypr/hyprland.lua"
     cp "$CONFIGS_DIR/hypr/hyprpaper.conf" "$HOME/.config/hypr/hyprpaper.conf"
     cp "$CONFIGS_DIR/hypr/hypridle.conf"  "$HOME/.config/hypr/hypridle.conf"
     cp "$CONFIGS_DIR/hypr/hyprlock.conf"  "$HOME/.config/hypr/hyprlock.conf"
