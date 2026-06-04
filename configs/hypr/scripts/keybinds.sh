@@ -23,6 +23,7 @@ SUPER + L              Lock screen (hyprlock)
 SUPER + SHIFT + M      Logout menu (wlogout)
 SUPER + SHIFT + E      Exit Hyprland
 SUPER + SHIFT + C      Toggle caffeine (inhibit sleep)
+SUPER + SHIFT + B      Show/hide waybar
 
 ── Screenshots ────────────────────────────────
 Print                  Select area → clipboard
