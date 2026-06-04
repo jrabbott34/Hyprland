@@ -118,7 +118,6 @@ window#waybar.hidden {
 /* ── CPU ──────────────────────────────────────────────────────────────────── */
 #cpu {
     color: @green;
-    cursor: pointer;
 }
 
 #cpu:hover {
@@ -129,7 +128,6 @@ window#waybar.hidden {
 /* ── Memory ───────────────────────────────────────────────────────────────── */
 #memory {
     color: @mauve;
-    cursor: pointer;
 }
 
 #memory:hover {
@@ -146,7 +144,6 @@ window#waybar.hidden {
 /* ── Network ──────────────────────────────────────────────────────────────── */
 #network {
     color: @sky;
-    cursor: pointer;
 }
 
 #network.disconnected {
@@ -156,7 +153,6 @@ window#waybar.hidden {
 /* ── Bluetooth ────────────────────────────────────────────────────────────── */
 #bluetooth {
     color: @lavender;
-    cursor: pointer;
 }
 
 #bluetooth.off,
@@ -176,7 +172,6 @@ window#waybar.hidden {
 /* ── Caffeine ─────────────────────────────────────────────────────────────── */
 #custom-caffeine {
     color: @overlay0;
-    cursor: pointer;
 }
 
 #custom-caffeine.active {
