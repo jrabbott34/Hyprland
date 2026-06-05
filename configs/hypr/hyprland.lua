@@ -240,7 +240,7 @@ hl.window_rule({
 })
 
 -- Float these apps
-hl.window_rule({ name = "float-pavucontrol",  match = { class = "^(pavucontrol)$"           }, float = true, center = true, size = "700 500" })
+hl.window_rule({ name = "float-pavucontrol",  match = { class = "pavucontrol"           }, float = true, center = true, size = "700 500" })
 hl.window_rule({ name = "float-blueman",      match = { class = "^(blueman-manager)$"        }, float = true, center = true, size = "800 600" })
 hl.window_rule({ name = "float-nm",           match = { class = "^(nm-connection-editor)$"   }, float = true })
 hl.window_rule({ name = "float-lxappearance", match = { class = "^(lxappearance)$"           }, float = true })
