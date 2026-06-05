@@ -14,8 +14,8 @@
         "custom/caffeine",
         "network",
         "cpu",
-        "memory",
-        "tray"
+        "memory"
+        // "tray"  -- re-add to modules-right and uncomment below to restore
     ],
 
     // ── Left ─────────────────────────────────────────────────────────────────
@@ -112,8 +112,8 @@
         "on-click": "alacritty -e btop"
     },
 
-    "tray": {
-        "icon-size": 16,
-        "spacing":   8
-    }
+    // "tray": {
+    //     "icon-size": 16,
+    //     "spacing":   8
+    // }
 }
