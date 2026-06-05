@@ -91,6 +91,7 @@ deploy_configs() {
     info "Deploying configs..."
     mkdir -p \
         "$HOME/.config/hypr/scripts" \
+        "$HOME/.config/hypr/sounds" \
         "$HOME/.config/waybar/scripts" \
         "$HOME/.config/wofi" \
         "$HOME/.config/dunst" \
