@@ -20,7 +20,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
     hl.exec_cmd("waybar")
     hl.exec_cmd("dunst")
-    hl.exec_cmd("hyprpaper")
+    hl.exec_cmd("waypaper --restore")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("nm-applet --indicator")
     hl.exec_cmd("blueman-applet")
@@ -170,11 +170,11 @@ hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("wlogout"))
 hl.bind(mainMod .. " + L",         hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("hyprctl dispatch exit"))
 
--- Caffeine (inhibit idle/sleep)
-hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("~/.config/hypr/scripts/caffeine-toggle.sh"))
-
 -- Toggle waybar
 hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
+
+-- Random wallpaper from ~/Pictures
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("waypaper --random --folder ~/Pictures"))
 
 -- Screenshots
 hl.bind("Print",
