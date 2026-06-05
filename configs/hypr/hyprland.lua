@@ -50,8 +50,8 @@ hl.env("MOZ_ENABLE_WAYLAND",                  "1")
 -----------------------
 hl.config({
     general = {
-        gaps_in     = 4,
-        gaps_out    = 8,
+        gaps_in     = 2,
+        gaps_out    = 2,
         border_size = 2,
 
         col = {
@@ -65,7 +65,7 @@ hl.config({
     },
 
     decoration = {
-        rounding         = 8,
+        rounding         = 4,
         active_opacity   = 1.0,
         inactive_opacity = 0.95,
 
