@@ -60,7 +60,8 @@ install_packages() {
         libreoffice-fresh nwg-look trezor-suite-bin linux linux-firmware linux-headers intel-ucode bluez \
         bluez-utils zsh woff2 wlr-randr waybar ttf-ms-fonts \
         remmina freerdp fish foot virt-manager qemu-full libvirt edk2-ovmf dnsmasq iptables-nft \
-        bridge-utils dosfstools gnome-disk-utility wl-clipboard noto-fonts-emoji sddm
+        bridge-utils dosfstools gnome-disk-utility wl-clipboard noto-fonts-emoji sddm \
+        sound-theme-freedesktop
 
     # Sugar Candy SDDM theme (AUR)
     yay -S --noconfirm --needed sddm-sugar-candy-git
