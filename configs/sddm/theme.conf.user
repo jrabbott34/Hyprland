@@ -1,0 +1,39 @@
+[General]
+# Background: set to an absolute path to a wallpaper, or leave blank for solid color
+Background=""
+BackgroundColor="#1e1e2e"
+DimBackgroundImage=0.0
+ScaleImageCropped=true
+
+Font="FiraCode Nerd Font"
+FontSize=11
+
+# Catppuccin Mocha
+MainColor="#cdd6f4"
+AccentColor="#89b4fa"
+OverrideLoginButtonTextColor="#1e1e2e"
+
+# Form panel
+FormPosition="center"
+HaveFormBackground=true
+FormBackgroundColor="#1e1e2e"
+FormBackgroundOpacity=0.75
+RoundCorners=16
+ScreenPadding=0
+
+# Clock
+DateFormat="dddd, MMMM d"
+TimeFormat="h:mm AP"
+
+# Labels
+HeaderText="Welcome back"
+TranslatePlaceholderUsername="Username"
+TranslatePlaceholderPassword="Password"
+TranslateLogin="Sign in"
+TranslateLoginFailedWarning="Incorrect credentials"
+TranslateCapslockWarning="Caps Lock is on"
+
+ShowPasswordMask=true
+AllowEmptyPassword=false
+InterfaceShadowSize=6
+InterfaceShadowOpacity=0.8

@@ -60,7 +60,10 @@ install_packages() {
         libreoffice-fresh nwg-look trezor-suite-bin linux linux-firmware linux-headers intel-ucode bluez \
         bluez-utils zsh woff2 wlr-randr waybar ttf-ms-fonts \
         remmina freerdp fish foot virt-manager qemu-full libvirt edk2-ovmf dnsmasq iptables-nft \
-        bridge-utils dosfstools gnome-disk-utility wl-clipboard noto-fonts-emoji
+        bridge-utils dosfstools gnome-disk-utility wl-clipboard noto-fonts-emoji sddm
+
+    # Sugar Candy SDDM theme (AUR)
+    yay -S --noconfirm --needed sddm-sugar-candy-git
 
     # NOTE: icaclient (Citrix) requires manual AUR install — EULA must be accepted interactively.
     # Run manually after install: yay -S icaclient
@@ -76,6 +79,7 @@ enable_services() {
     sudo systemctl enable --now cups
     sudo systemctl enable --now libvirtd
     sudo systemctl enable --now power-profiles-daemon
+    sudo systemctl enable sddm
     # Add user to libvirt group for VM access
     sudo usermod -aG libvirt,kvm "$(whoami)"
     success "Services enabled"
@@ -117,6 +121,11 @@ deploy_configs() {
     # Wlogout
     cp "$CONFIGS_DIR/wlogout/layout"    "$HOME/.config/wlogout/layout"
     cp "$CONFIGS_DIR/wlogout/style.css" "$HOME/.config/wlogout/style.css"
+
+    # SDDM
+    sudo mkdir -p /etc/sddm.conf.d /usr/share/sddm/themes/sugar-candy
+    sudo cp "$CONFIGS_DIR/sddm/sddm.conf"          /etc/sddm.conf.d/hyprland.conf
+    sudo cp "$CONFIGS_DIR/sddm/theme.conf.user"     /usr/share/sddm/themes/sugar-candy/theme.conf.user
 
     success "Configs deployed"
 }
