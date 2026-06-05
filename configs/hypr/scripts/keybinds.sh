@@ -22,8 +22,8 @@ SUPER + H              This keybinds menu
 SUPER + L              Lock screen (hyprlock)
 SUPER + SHIFT + M      Logout menu (wlogout)
 SUPER + SHIFT + E      Exit Hyprland
-SUPER + SHIFT + C      Toggle caffeine (inhibit sleep)
 SUPER + SHIFT + B      Show/hide waybar
+SUPER + SHIFT + W      Random wallpaper from ~/Pictures
 
 ── Screenshots ────────────────────────────────
 Print                  Select area → clipboard
