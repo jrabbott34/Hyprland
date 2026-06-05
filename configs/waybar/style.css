@@ -55,6 +55,7 @@ window#waybar.hidden {
 #cpu,
 #memory,
 #network,
+#pulseaudio,
 #tray,
 #custom-weather,
 #custom-caffeine {
@@ -138,6 +139,15 @@ window#waybar.hidden {
 #cpu.critical   { color: @red; animation: blink 1s linear infinite; }
 #memory.warning { color: @yellow; }
 #memory.critical { color: @red; animation: blink 1s linear infinite; }
+
+/* ── Audio ────────────────────────────────────────────────────────────────── */
+#pulseaudio {
+    color: @teal;
+}
+
+#pulseaudio.muted {
+    color: @overlay0;
+}
 
 /* ── Network ──────────────────────────────────────────────────────────────── */
 #network {

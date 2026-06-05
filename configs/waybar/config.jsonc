@@ -12,6 +12,7 @@
     "modules-right":  [
         "custom/weather",
         "custom/caffeine",
+        "pulseaudio",
         "network",
         "cpu",
         "memory"
@@ -96,6 +97,17 @@
         "tooltip-format-ethernet": "󰈀 {ifname}\n{ipaddr}/{cidr}",
         "on-click":       "alacritty --title nmtui -e nmtui",
         "on-click-right": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format":       "{icon}  {volume}%",
+        "format-muted": "󰝟  Muted",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click":       "pavucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "tooltip-format": "{desc} — {volume}%"
     },
 
     "cpu": {
