@@ -60,7 +60,7 @@ install_packages() {
         libreoffice-fresh nwg-look trezor-suite-bin linux linux-firmware linux-headers intel-ucode bluez \
         bluez-utils zsh woff2 wlr-randr waybar ttf-ms-fonts \
         remmina freerdp fish foot virt-manager qemu-full libvirt edk2-ovmf dnsmasq iptables-nft \
-        bridge-utils dosfstools gnome-disk-utility wl-clipboard
+        bridge-utils dosfstools gnome-disk-utility wl-clipboard noto-fonts-emoji
 
     # NOTE: icaclient (Citrix) requires manual AUR install — EULA must be accepted interactively.
     # Run manually after install: yay -S icaclient

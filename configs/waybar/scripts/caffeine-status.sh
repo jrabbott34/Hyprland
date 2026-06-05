@@ -6,5 +6,5 @@ LOCK_FILE="/tmp/.caffeine-active"
 if [ -f "$LOCK_FILE" ]; then
     echo '{"text": "󰅶 Awake", "tooltip": "Caffeine ON — click to disable", "class": "active"}'
 else
-    echo '{"text": "󰒲", "tooltip": "Caffeine OFF — click to enable", "class": ""}'
+    echo '{"text": "󰒲 Sleep", "tooltip": "Caffeine OFF — click to enable", "class": ""}'
 fi
