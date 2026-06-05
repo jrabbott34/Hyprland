@@ -2,7 +2,7 @@
 # Fetches weather from wttr.in and outputs JSON for Waybar custom module.
 # Set WEATHER_LOCATION in your shell profile, or it auto-detects by IP.
 
-LOCATION="${WEATHER_LOCATION:-}"
+LOCATION="${WEATHER_LOCATION:-Louisville+KY}"
 LOCATION_ENC="${LOCATION// /+}"
 
 # Condition + temp on one line, full report as tooltip

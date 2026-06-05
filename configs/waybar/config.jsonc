@@ -12,7 +12,6 @@
     "modules-right":  [
         "custom/weather",
         "custom/caffeine",
-        "bluetooth",
         "network",
         "cpu",
         "memory",
@@ -88,28 +87,15 @@
         "return-type": "json"
     },
 
-    "bluetooth": {
-        "format":                        "󰂯",
-        "format-disabled":               "󰂲",
-        "format-off":                    "󰂲",
-        "format-connected":              "󰂱 {device_alias}",
-        "format-connected-battery":      "󰂱 {device_alias} {device_battery_percentage}%",
-        "tooltip-format":                "󰂯 {controller_alias}\n{num_connections} connected",
-        "tooltip-format-connected":      "󰂯 {controller_alias}\n\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "  {device_alias}",
-        "tooltip-format-enumerate-connected-battery": "  {device_alias} {device_battery_percentage}%",
-        "on-click": "blueman-manager"
-    },
-
     "network": {
-        "format-wifi":       "󰤨  {essid}",
-        "format-ethernet":   "󰈀  {ipaddr}",
-        "format-linked":     "󰈀  (No IP)",
-        "format-disconnected": "󰤭  Offline",
-        "format-alt":        "{ifname}: {ipaddr}/{cidr}",
+        "format-wifi":         "󰤨",
+        "format-ethernet":     "󰈀",
+        "format-linked":       "󰈀",
+        "format-disconnected": "󰤭",
         "tooltip-format-wifi":     "󰤨 {essid}\nSignal: {signalStrength}%\n{ipaddr}",
         "tooltip-format-ethernet": "󰈀 {ifname}\n{ipaddr}/{cidr}",
-        "on-click": "nm-connection-editor"
+        "on-click":       "alacritty --title nmtui -e nmtui",
+        "on-click-right": "nm-connection-editor"
     },
 
     "cpu": {
