@@ -1,0 +1,57 @@
+/* wlogout — Catppuccin Mocha */
+
+* {
+    background-image: none;
+    box-shadow: none;
+}
+
+window {
+    background-color: rgba(17, 17, 27, 0.85);
+}
+
+button {
+    font-family:      "FiraCode Nerd Font", monospace;
+    font-size:        16px;
+    font-weight:      bold;
+    color:            #cdd6f4;
+    background-color: rgba(49, 50, 68, 0.9);
+    border:           2px solid #45475a;
+    border-radius:    16px;
+    margin:           12px;
+    padding:          0;
+
+    background-repeat:   no-repeat;
+    background-position: center 30%;
+    background-size:     20%;
+
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+    background-color: rgba(69, 71, 90, 0.95);
+    border-color:     #89b4fa;
+    color:            #89b4fa;
+}
+
+button:focus {
+    background-color: rgba(49, 50, 68, 0.9);
+    border-color:     #cba6f7;
+    outline:          none;
+}
+
+/* Icons from wlogout's bundled set */
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"));
+}
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"));
+}
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"));
+}
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"));
+}
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"));
+}

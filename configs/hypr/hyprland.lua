@@ -166,9 +166,8 @@ hl.bind(mainMod .. " + V",         hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + J",         hl.dsp.layout("togglesplit"))
 
 -- Session
-hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("wlogout"))
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("wlogout"))
 hl.bind(mainMod .. " + L",         hl.dsp.exec_cmd("hyprlock"))
-hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("hyprctl dispatch exit"))
 
 -- Toggle waybar
 hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
@@ -249,6 +248,9 @@ hl.window_rule({ name = "float-printer",      match = { class = "^(system-config
 hl.window_rule({ name = "float-file-op",      match = { title = "^(File Operation Progress)$" }, float = true })
 hl.window_rule({ name = "float-confirm",      match = { title = "^(Confirm to replace files)$" }, float = true })
 hl.window_rule({ name = "float-yad",          match = { class = "^(yad)$"                    }, float = true })
+
+-- nmtui — float and center when launched from waybar network click
+hl.window_rule({ name = "float-nmtui", match = { title = "^nmtui$" }, float = true, center = true, size = "600 400" })
 
 -- Keep LibreOffice tiled
 hl.window_rule({ name = "tile-libreoffice",   match = { class = "^(soffice)$"                }, tile = true })

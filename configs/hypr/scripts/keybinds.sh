@@ -20,8 +20,7 @@ SUPER + H              This keybinds menu
 
 ── Session ────────────────────────────────────
 SUPER + L              Lock screen (hyprlock)
-SUPER + SHIFT + M      Logout menu (wlogout)
-SUPER + SHIFT + E      Exit Hyprland
+SUPER + SHIFT + E      Session menu (wlogout)
 SUPER + SHIFT + B      Show/hide waybar
 SUPER + SHIFT + W      Random wallpaper from ~/Pictures
 

@@ -33,9 +33,8 @@
 }
 
 window#waybar {
-    background-color: alpha(@base, 0.90);
+    background-color: transparent;
     color: @text;
-    border-radius: 10px;
     transition-duration: 0.3s;
 }
 
@@ -56,7 +55,6 @@ window#waybar.hidden {
 #cpu,
 #memory,
 #network,
-#bluetooth,
 #tray,
 #custom-weather,
 #custom-caffeine {
@@ -148,20 +146,6 @@ window#waybar.hidden {
 
 #network.disconnected {
     color: @red;
-}
-
-/* ── Bluetooth ────────────────────────────────────────────────────────────── */
-#bluetooth {
-    color: @lavender;
-}
-
-#bluetooth.off,
-#bluetooth.disabled {
-    color: @overlay0;
-}
-
-#bluetooth.connected {
-    color: @blue;
 }
 
 /* ── Weather ──────────────────────────────────────────────────────────────── */

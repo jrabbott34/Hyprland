@@ -89,6 +89,7 @@ deploy_configs() {
         "$HOME/.config/waybar/scripts" \
         "$HOME/.config/wofi" \
         "$HOME/.config/dunst" \
+        "$HOME/.config/wlogout" \
         "$HOME/Pictures/screenshots" \
         "$HOME/Pictures/wallpapers"
 
@@ -112,6 +113,10 @@ deploy_configs() {
 
     # Dunst
     cp "$CONFIGS_DIR/dunst/dunstrc"   "$HOME/.config/dunst/dunstrc"
+
+    # Wlogout
+    cp "$CONFIGS_DIR/wlogout/layout"    "$HOME/.config/wlogout/layout"
+    cp "$CONFIGS_DIR/wlogout/style.css" "$HOME/.config/wlogout/style.css"
 
     success "Configs deployed"
 }
