@@ -1,6 +1,6 @@
 # Hyprland Dotfiles
 
-Minimalist Hyprland build for Arch Linux — Catppuccin Mocha theme throughout.
+Minimalist Hyprland build for Arch Linux — Catppuccin Mocha theme throughout. Straightforward waybar. Solid and simple wofi app launcher. Pretty solid with a simple idea.
 
 ## What's included
 
