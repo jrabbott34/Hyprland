@@ -17,7 +17,7 @@ hl.monitor({ output = "", mode = "preferred", position = "auto", scale = "auto" 
 ---- AUTOSTART ----
 -------------------
 hl.on("hyprland.start", function()
-    hl.exec_cmd("bash -c 'sleep 3 && paplay /usr/share/sounds/freedesktop/stereo/service-login.oga'")
+    hl.exec_cmd("bash -c 'sleep 3 && paplay ~/.config/hypr/sounds/login.ogg 2>/dev/null || paplay /usr/share/sounds/freedesktop/stereo/service-login.oga'")
     hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
     hl.exec_cmd("waybar")
     hl.exec_cmd("dunst")

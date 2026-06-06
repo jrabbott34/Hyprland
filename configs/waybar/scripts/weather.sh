@@ -6,7 +6,7 @@ LOCATION="${WEATHER_LOCATION:-Louisville+KY}"
 LOCATION_ENC="${LOCATION// /+}"
 
 # Current conditions (display text)
-WEATHER=$(curl -s --max-time 10 -A "curl" "wttr.in/${LOCATION_ENC}?format=%c+%t" 2>/dev/null | tr -d '\n')
+WEATHER=$(curl -s --max-time 10 -A "curl" "wttr.in/${LOCATION_ENC}?format=%c+%t" 2>/dev/null | tr -d '\n' | tr -s ' ')
 
 if [[ -z "$WEATHER" || "$WEATHER" == *"Unknown"* ]]; then
     echo '{"text": "󰖑 N/A", "tooltip": "Weather unavailable", "class": ""}'
