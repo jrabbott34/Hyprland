@@ -61,7 +61,7 @@ install_packages() {
         bluez-utils zsh woff2 wlr-randr waybar ttf-ms-fonts \
         remmina freerdp fish foot virt-manager qemu-full libvirt edk2-ovmf dnsmasq iptables-nft \
         bridge-utils dosfstools gnome-disk-utility wl-clipboard noto-fonts-emoji sddm \
-        sound-theme-freedesktop swayosd-git fastfetch
+        sound-theme-freedesktop swayosd-git fastfetch thunderbird
 
     # Sugar Candy SDDM theme (AUR)
     yay -S --noconfirm --needed sddm-sugar-candy-git
