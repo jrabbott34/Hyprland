@@ -97,6 +97,7 @@ deploy_configs() {
         "$HOME/.config/dunst" \
         "$HOME/.config/wlogout" \
         "$HOME/.config/fastfetch" \
+        "$HOME/.config/fish" \
         "$HOME/Pictures/screenshots" \
         "$HOME/Pictures/wallpapers"
 
@@ -127,6 +128,9 @@ deploy_configs() {
 
     # Fastfetch
     cp "$CONFIGS_DIR/fastfetch/config.jsonc" "$HOME/.config/fastfetch/config.jsonc"
+
+    # Fish
+    cp "$CONFIGS_DIR/fish/config.fish" "$HOME/.config/fish/config.fish"
 
     # SDDM
     sudo mkdir -p /etc/sddm.conf.d /usr/share/sddm/themes/sugar-candy
