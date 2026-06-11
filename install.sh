@@ -61,7 +61,7 @@ install_packages() {
         bluez-utils zsh woff2 wlr-randr waybar ttf-ms-fonts \
         remmina freerdp fish foot virt-manager qemu-full libvirt edk2-ovmf dnsmasq iptables-nft \
         bridge-utils dosfstools gnome-disk-utility wl-clipboard noto-fonts-emoji sddm \
-        sound-theme-freedesktop swayosd-git
+        sound-theme-freedesktop swayosd-git fastfetch
 
     # Sugar Candy SDDM theme (AUR)
     yay -S --noconfirm --needed sddm-sugar-candy-git
@@ -96,6 +96,7 @@ deploy_configs() {
         "$HOME/.config/wofi" \
         "$HOME/.config/dunst" \
         "$HOME/.config/wlogout" \
+        "$HOME/.config/fastfetch" \
         "$HOME/Pictures/screenshots" \
         "$HOME/Pictures/wallpapers"
 
@@ -123,6 +124,9 @@ deploy_configs() {
     # Wlogout
     cp "$CONFIGS_DIR/wlogout/layout"    "$HOME/.config/wlogout/layout"
     cp "$CONFIGS_DIR/wlogout/style.css" "$HOME/.config/wlogout/style.css"
+
+    # Fastfetch
+    cp "$CONFIGS_DIR/fastfetch/config.jsonc" "$HOME/.config/fastfetch/config.jsonc"
 
     # SDDM
     sudo mkdir -p /etc/sddm.conf.d /usr/share/sddm/themes/sugar-candy

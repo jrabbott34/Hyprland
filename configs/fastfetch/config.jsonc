@@ -1,0 +1,115 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+    "logo": {
+        "type": "builtin",
+        "source": "arch",
+        "color": {
+            "1": "blue",
+            "2": "blue"
+        },
+        "padding": {
+            "top": 1,
+            "left": 2,
+            "right": 2
+        }
+    },
+
+    "display": {
+        "separator": "  ",
+        "color": {
+            "keys":   "blue",
+            "title":  "blue"
+        }
+    },
+
+    "modules": [
+        {
+            "type": "title",
+            "color": {
+                "user":   "magenta",
+                "at":     "white",
+                "host":   "blue"
+            }
+        },
+        "separator",
+        {
+            "type":   "os",
+            "key":    "  OS",
+            "keyColor": "blue"
+        },
+        {
+            "type":   "kernel",
+            "key":    "  Kernel",
+            "keyColor": "blue"
+        },
+        {
+            "type":   "uptime",
+            "key":    "󰔟  Uptime",
+            "keyColor": "blue"
+        },
+        {
+            "type":   "packages",
+            "key":    "󰏗  Packages",
+            "keyColor": "blue"
+        },
+        {
+            "type":   "shell",
+            "key":    "  Shell",
+            "keyColor": "green"
+        },
+        {
+            "type":   "wm",
+            "key":    "  WM",
+            "keyColor": "green"
+        },
+        {
+            "type":   "terminal",
+            "key":    "  Terminal",
+            "keyColor": "green"
+        },
+        {
+            "type":   "font",
+            "key":    "  Font",
+            "keyColor": "green"
+        },
+        {
+            "type":   "theme",
+            "key":    "  Theme",
+            "keyColor": "yellow"
+        },
+        "break",
+        {
+            "type":   "cpu",
+            "key":    "  CPU",
+            "keyColor": "red"
+        },
+        {
+            "type":   "gpu",
+            "key":    "󰍛  GPU",
+            "keyColor": "red"
+        },
+        {
+            "type":   "memory",
+            "key":    "󰾆  Memory",
+            "keyColor": "red"
+        },
+        {
+            "type":   "disk",
+            "key":    "󰋊  Disk",
+            "keyColor": "red",
+            "folders": "/"
+        },
+        {
+            "type":   "battery",
+            "key":    "  Battery",
+            "keyColor": "red"
+        },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "circle",
+            "paddingLeft": 2
+        }
+    ]
+}
